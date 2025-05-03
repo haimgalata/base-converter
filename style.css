@@ -1,0 +1,112 @@
+/* Haim Galata 206450397 || Netanel Rada 209409036 */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: rgb(241, 239, 244);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 30px 10px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  color: #4a4a54;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #4a4a54;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section-label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.base-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.base-button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.base-button.selected {
+  transform: scale(1.2);
+  border: 2px solid black;
+}
+
+.red { background-color: #ff5757; }
+.blue { background-color: #0cc0df; }
+.purple { background-color: #8c52ff; }
+.yellow { background-color: #ffde59; color: black; }
+
+.input-section {
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1.1em;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  width: 250px;
+  max-width: 90%;
+}
+
+.result {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#convertBtn {
+  background-color: #4a4a54;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#convertBtn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .base-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  #convertBtn {
+    width: 80%;
+  }
+}

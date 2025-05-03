@@ -1,0 +1,46 @@
+<!-- Haim Galata 206450397 || Netanel Rada 209409036 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Base Converter</h1>
+    <p class="description">Convert numbers between different bases (Binary, Decimal, Hex, Octal).</p>
+
+    <div class="section">
+      <label class="section-label">FROM</label>
+      <div class="base-buttons" id="from-base">
+        <button class="base-button red" data-base="2">Binary (2)</button>
+        <button class="base-button blue" data-base="8">Octal (8)</button>
+        <button class="base-button purple" data-base="10">Decimal (10)</button>
+        <button class="base-button yellow" data-base="16">Hexadecimal (16)</button>
+      </div>
+    </div>
+
+    <div class="input-section">
+      <label for="numberInput">Enter a number</label>
+      <input type="text" id="numberInput" />
+    </div>
+
+    <div class="section">
+      <label class="section-label">TO</label>
+      <div class="base-buttons" id="to-base">
+        <button class="base-button red" data-base="2">Binary (2)</button>
+        <button class="base-button blue" data-base="8">Octal (8)</button>
+        <button class="base-button purple" data-base="10">Decimal (10)</button>
+        <button class="base-button yellow" data-base="16">Hexadecimal (16)</button>
+      </div>
+    </div>
+
+    <p class="result" id="output">Result:</p>
+    <button id="convertBtn">Convert</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
